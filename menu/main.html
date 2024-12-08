@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Delicious Bites</h1>
+    <p>Explore our delicious menu!</p>
+  </header>
+
+  <main>
+    <section class="menu-category">
+      <h2>Appetizers</h2>
+      <ul>
+        <li>
+          <span>Garlic Bread</span>
+          <span>₹150</span>
+          <button onclick="addToCart(150)">Add</button>
+        </li>
+        <li>
+          <span>Cheese Nachos</span>
+          <span>₹250</span>
+          <button onclick="addToCart(250)">Add</button>
+        </li>
+        <li>
+          <span>Spring Rolls</span>
+          <span>₹180</span>
+          <button onclick="addToCart(180)">Add</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="menu-category">
+      <h2>Main Course</h2>
+      <ul>
+        <li>
+          <span>Paneer Butter Masala</span>
+          <span>₹350</span>
+          <button onclick="addToCart(350)">Add</button>
+        </li>
+        <li>
+          <span>Chicken Biryani</span>
+          <span>₹400</span>
+          <button onclick="addToCart(400)">Add</button>
+        </li>
+        <li>
+          <span>Veg Pulao</span>
+          <span>₹300</span>
+          <button onclick="addToCart(300)">Add</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="menu-category">
+      <h2>Desserts</h2>
+      <ul>
+        <li>
+          <span>Chocolate Brownie</span>
+          <span>₹120</span>
+          <button onclick="addToCart(120)">Add</button>
+        </li>
+        <li>
+          <span>Gulab Jamun</span>
+          <span>₹100</span>
+          <button onclick="addToCart(100)">Add</button>
+        </li>
+        <li>
+          <span>Ice Cream Sundae</span>
+          <span>₹180</span>
+          <button onclick="addToCart(180)">Add</button>
+        </li>
+      </ul>
+    </section>
+
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <p>Total: ₹<span id="total">0</span></p>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
